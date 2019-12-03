@@ -111,7 +111,7 @@ def main () :
     global indentSign
     parser = OptionParser()
     parser.add_option("-c", "--config", dest="config", help="Path of config file.", metavar="CONFIG")
-    parser.add_option("-t", type="int", dest="tabConvert", help="Convert tab into space.", metavar="SPACE_COUNT")
+    parser.add_option("-t", type="int", dest="tabConvert", help="Indent using the blank space in config file.", metavar="SPACE_COUNT")
     parser.add_option("-o", "--output", dest="output", help="Output file path.", metavar="OUTPUT")
     (options, args) = parser.parse_args()
     
